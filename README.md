@@ -24,16 +24,17 @@ A estrutura de dados foi desenhada para priorizar relacionamentos como cidadãos
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-* Neo4j Desktop ou Neo4j Sandbox / AuraDB.
+* [Docker](https://www.docker.com/) instalado.
 
 ### Instalação
-1.  Clone este repositório.
-2.  Abra o seu cliente Neo4j.
-3.  Execute o script `database_setup.cypher` para popular o banco com os dados de teste (Nós e Arestas).
+1. Clone este repositório.
+2. Inicie o container do Neo4j via Docker.
+3. Acesse `http://localhost:7474` no seu navegador.
+4. Execute o script `database_setup.cypher` para popular o banco.
 
 ## 📊 Queries e Insights
 
-Abaixo estão alguns exemplos das análises implementadas via Cypher (disponíveis em `analysis_queries.cypher`):
+Abaixo um exemplo de análise implementada via Cypher (disponivel em `analysis_queries.cypher`):
 
 ### 1. Popularidade de Conteúdo
 Identifica quais posts geraram mais engajamento na rede.
